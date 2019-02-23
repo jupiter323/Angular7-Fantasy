@@ -1,14 +1,112 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Ng7Pre</title>
+  <title>Ng7Fantasy</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- home -->
+  <meta name="twitter:title" content="Premier League Football News, Fixtures, Scores & Results" />
+  <meta name="keywords" content="Premier League, Football, Soccer, Official" />
+  <meta property="og:type" content="website" />
+  <meta name="description"
+    content="For all the latest Premier League news, visit the official website of the Premier League." />
+  <meta name="twitter:description"
+    content="For all the latest Premier League news, visit the official website of the Premier League." />
+  <meta name="twitter:image" content="assets/s3.amazonaws.com/premierleague-static-files/premierleague/pl_icon.png" />
+  <meta property="og:title" content="Premier League Football News, Fixtures, Scores & Results" />
+  <meta property="og:image" content="assets/s3.amazonaws.com/premierleague-static-files/premierleague/pl_icon.png" />
+  <meta name="theme-color" content="#38003C" />
+  <meta property="og:description"
+    content="For all the latest Premier League news, visit the official website of the Premier League." />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Google site owenrship verification -->
+  <meta name="google-site-verification" content="noKfCOpWdn5QDC9IRMoGNmc4Hu3MgXIYR8X2Ka5fb64" />
+  <script src="assets/i18n/i18n-en.js" charset="UTF-8"></script>
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="assets/styles/badge-abbreviations.css">
+  <link rel="stylesheet" href="assets/styles/match-centre.css">
+  <link rel="stylesheet" href="assets/styles/nike-ball-hub.css">
+  <link rel="stylesheet" href="assets/styles/screen.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" href="/assets/styles/ie-old.css"><script src="/assets/bower/html5shiv/dist/html5shiv.js"></script><![endif]-->
+  <script async='async' src='http://www.googletagservices.com/tag/js/gpt.js'></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" type="text/css">
+  <!-- Google Tag Manager --><noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-MS75QT" height="0"
+      width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'assets/www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MS75QT');</script><!-- End Google Tag Manager -->
+  <!-- Polyfill service provided by the FT - https://github.com/Financial-Times/polyfill-service -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <!-- FastClick speeds up click bindings on touch screens by the FT - https://github.com/ftlabs/fastclick -->
+  <script src="assets/bower/fastclick/lib/fastclick.js"></script>
+  <script src="assets/bower/mustache.js/mustache.min.js"></script>
+  <script src="assets/bower/moment/min/moment-with-locales.min.js"></script>
+  <script src="assets/bower/moment-timezone/moment-timezone.js"></script>
+  <script src="assets/bower/object-fit-images/dist/ofi.browser.js"></script>
+  <script src="assets/bower/intersection-observer/polyfill/intersection-observer.js"></script>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/i/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/i/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/i/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/i/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/i/favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/i/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/i/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/i/favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="assets/i/favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="assets/i/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/i/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/i/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="assets/i/favicon/favicon-128.png" sizes="128x128" />
+  <link rel="shortcut icon" href="assets/i/favicon/favicon.ico" />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  <meta name="apple-itunes-app" content="app-id=1138895159">
+  <!-- Enables or disables automatic detection of possible phone numbers in a webpage in Safari on iOS. https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html#//apple_ref/doc/uid/TP40008193-SW5 -->
+  <meta name="format-detection" content="telephone=no">
+
+
+  <!-- fantasy -->
+  <!-- <link rel="stylesheet" href="assets/styles/fantasy.css"> -->
+
 </head>
+
 <body>
   <app-root></app-root>
+  <!-- custom -->
+  <script src="assets/bower/pulse-js/dist/pulse.min.js"></script>
+  <script src="assets/scripts/main.min.js"></script>
+  <script src="assets/widgets/common.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      var adfScr = document.createElement("script");
+      adfScr.src = "https://track.adform.net/serving/scripts/trackpoint/";
+      adfScr.onload = function () {
+        adf.container(998269, 'Master Tag');
+      };
+      document.head.appendChild(adfScr);
+    })();
+  </script><!-- Adform tracking code end -->
 </body>
+
 </html>
