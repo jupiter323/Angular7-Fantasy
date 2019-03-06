@@ -17,9 +17,10 @@ import { PointsComponent } from './points/points.component';
 import { TransfersComponent } from './transfers/transfers.component';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { FixturesComponent } from './fixtures/fixtures.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [PrizesComponent, ScoutComponent, HelpComponent, FantasyComponent, FantasyhomeComponent, FantasyheaderComponent, StatisticsComponent, StatusComponent, MyteamComponent, PointsComponent, TransfersComponent, LeaguesComponent, FixturesComponent],
+  declarations: [PrizesComponent, ScoutComponent, HelpComponent, FantasyComponent, FantasyhomeComponent, FantasyheaderComponent, StatisticsComponent, StatusComponent, MyteamComponent, PointsComponent, TransfersComponent, LeaguesComponent, FixturesComponent, RegisterComponent],
   imports: [
   CommonModule,
     FantasyRoutingModule

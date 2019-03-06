@@ -13,6 +13,7 @@ import { PointsComponent } from './points/points.component';
 import { TransfersComponent } from './transfers/transfers.component';
 import { LeaguesComponent } from './leagues/leagues.component';
 import { FixturesComponent } from './fixtures/fixtures.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
     {
@@ -22,6 +23,10 @@ const routes: Routes = [
             {
                 path: "",
                 component: FantasyhomeComponent
+            },
+            {
+                path: "register",
+                component: RegisterComponent
             },
             {
                 path: 'fantasyhome',
