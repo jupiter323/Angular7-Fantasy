@@ -6,6 +6,13 @@ import { ScoutComponent } from './scout/scout.component';
 import { HelpComponent } from './help/help.component';
 import { FantasyComponent } from './fantasy/fantasy.component';
 import { FantasyhomeComponent } from './fantasyhome/fantasyhome.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { StatusComponent } from './status/status.component';
+import { MyteamComponent } from './myteam/myteam.component';
+import { PointsComponent } from './points/points.component';
+import { TransfersComponent } from './transfers/transfers.component';
+import { LeaguesComponent } from './leagues/leagues.component';
+import { FixturesComponent } from './fixtures/fixtures.component';
 
 const routes: Routes = [
     {
@@ -31,6 +38,34 @@ const routes: Routes = [
             {
                 path: 'help',
                 component: HelpComponent
+            },
+            {
+                path: 'statistics',
+                component: StatisticsComponent
+            },
+            {
+                path: "status",
+                component: StatusComponent
+            },
+            {
+                path: "myteam",
+                component: MyteamComponent
+            },
+            {
+                path: "points",
+                component: PointsComponent
+            },
+            {
+                path: "transfers",
+                component: TransfersComponent
+            },
+            {
+                path: "leagues",
+                component: LeaguesComponent
+            },
+            {
+                path: "fixtures",
+                component: FixturesComponent
             }
         ]
     }

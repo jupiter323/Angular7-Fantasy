@@ -9,12 +9,21 @@ import { FantasyRoutingModule } from './fantasy-routing.module';
 import { FantasyComponent } from './fantasy/fantasy.component';
 import { FantasyhomeComponent } from './fantasyhome/fantasyhome.component';
 import { FantasyheaderComponent } from './fantasyheader/fantasyheader.component';
+import { StatisticsComponent } from './statistics/statistics.component';
+import { GlobalService } from './../global.service';
+import { StatusComponent } from './status/status.component';
+import { MyteamComponent } from './myteam/myteam.component';
+import { PointsComponent } from './points/points.component';
+import { TransfersComponent } from './transfers/transfers.component';
+import { LeaguesComponent } from './leagues/leagues.component';
+import { FixturesComponent } from './fixtures/fixtures.component';
 
 @NgModule({
-  declarations: [PrizesComponent, ScoutComponent, HelpComponent, FantasyComponent, FantasyhomeComponent, FantasyheaderComponent],
+  declarations: [PrizesComponent, ScoutComponent, HelpComponent, FantasyComponent, FantasyhomeComponent, FantasyheaderComponent, StatisticsComponent, StatusComponent, MyteamComponent, PointsComponent, TransfersComponent, LeaguesComponent, FixturesComponent],
   imports: [
-    CommonModule,
+  CommonModule,
     FantasyRoutingModule
-  ]
+  ],
+  providers:[GlobalService]
 })
 export class FantasyModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from './../global.service';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   ]
   dataUiArgs4 = { "contentId": 1058306, "mediaId": 6004577271001, "mediaTitle": "On this day - 21 Feb 2004: Charlton 3-2 Blackburn", "mediaDescription": "Blackburn goalkeeper Brad Friedel scored a shock equaliser, only for Charlton&#39s Claus Jensen to snatch a last-gasp win", "mediaDate": "21/2/2019", "mediaHotlinkUrl": "", "mediaHotlinkText": "" }
 
-  constructor() { }
+  constructor(private gs:GlobalService) {  }
 
   ngOnInit() {
   }

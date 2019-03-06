@@ -13,10 +13,8 @@
 
         <div>
 
-          <form method="post" action="https://users.premierleague.com/accounts/login/" class="ism-form ism-form--login">
+          <div class="ism-form ism-form--login">
             <input type="hidden" name="csrfmiddlewaretoken" value="WuDieXhG5hTUghe8RYQUHCRmVvdeYSD0">
-
-
 
             <h2 class="ism-form--login__heading">Sign In</h2>
 
@@ -37,25 +35,24 @@
 
             <div class="ism-form--login__group ism-form--login__group--login">
               <div class="ism-form__group">
-                <button type="submit" class="ismjs-submit btn btn-primary ism-button ism-button--full">Login</button>
+                <a (click)="gs.login()" href="/fantasy/status"
+                  class="ismjs-submit btn btn-primary ism-button ism-button--full">Login</a>
               </div>
             </div>
 
             <div class="ism-form--login__group ism-form--login__group--login">
               <div class="ism-form__group">
-                <a href="https://users.premierleague.com/accounts/password-reset/"
-                  class="ism-form--login__forgot-link ism-link ism-link--more">Forgot your
+                <a href="" class="ism-form--login__forgot-link ism-link ism-link--more">Forgot your
                   password?<span class="icn arrow-right ism-link__icon"></span></a>
-                <a href="https://fantasy.premierleague.com/help/"
-                  class="ism-form--login__forgot-link ism-link ism-link--more">Problems signing
+                <a href="" class="ism-form--login__forgot-link ism-link ism-link--more">Problems signing
                   in?<span class="icn arrow-right ism-link__icon"></span></a>
               </div>
             </div>
 
             <input type="hidden" name="app" value="plfpl-web">
-            <input type="hidden" name="redirect_uri" value="https://fantasy.premierleague.com/a/login">
+            <input type="hidden" name="redirect_uri" value="http://localhost/login">
 
-          </form>
+          </div>
 
           <h3 class="ism-login-divider">Or</h3>
 
@@ -64,7 +61,7 @@
 
             <ul class="ism-social-login__list">
               <li class="ism-social-login__item">
-                <a href="https://users.premierleague.com/accounts/facebook/login/?app=plfpl-web&amp;redirect_uri=https://fantasy.premierleague.com/a/login"
+                <a (click)="gs.login()" href="/fantasy/status"
                   class="ism-social-button--facebook ism-social-button--inline">
                   <img src="assets/fantasy/facebook.svg" alt="" class="ism-social-button__icon">
                   <span class="ism-social-button__text ism-social-button--inline__text">Login with
@@ -72,7 +69,7 @@
                 </a>
               </li>
               <li class="ism-social-login__item">
-                <a href="https://users.premierleague.com/accounts/twitter/login/?app=plfpl-web&amp;redirect_uri=https://fantasy.premierleague.com/a/login"
+                <a (click)="gs.login()" href="/fantasy/status"
                   class="ism-social-button--twitter ism-social-button--inline">
                   <img src="assets/fantasy/twitter.svg" alt="" class="ism-social-button__icon">
                   <span class="ism-social-button__text ism-social-button--inline__text">Login with
@@ -80,7 +77,7 @@
                 </a>
               </li>
               <li class="ism-social-login__item">
-                <a href="https://users.premierleague.com/accounts/google/login/?app=plfpl-web&amp;redirect_uri=https://fantasy.premierleague.com/a/login"
+                <a (click)="gs.login()" href="/fantasy/status"
                   class="ism-social-button--google ism-social-button--inline">
                   <img src="assets/fantasy/google.svg" alt="" class="ism-social-button__icon">
                   <span class="ism-social-button__text ism-social-button--inline__text">Login with
@@ -106,7 +103,7 @@
           </div>
 
           <div class="ism-home-reg__cta">
-            <a href="https://users.premierleague.com/a/profile/register?app=plfpl-web&amp;redirect_uri=https://fantasy.premierleague.com/a/login"
+            <a (click)="gs.login()" href="/fantasy/status"
               class="btn ism-button ism-button--full ism-button--fantasy">Sign Up Now<span
                 class="icn arrow-right"></span></a>
           </div>
@@ -143,7 +140,7 @@
 
 
           <div class="ism-featured">
-            <a href="https://www.premierleague.com/news/1060886" class="heroThumb ism-hero-thumb">
+            <a class="heroThumb ism-hero-thumb">
               <figure>
                 <span class="image">
                   <span class="icn shard-hero-thumbnail"></span>
