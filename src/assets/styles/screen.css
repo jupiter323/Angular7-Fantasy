@@ -28796,7 +28796,7 @@ img {
 .masthead {
     position: relative;
     z-index: 100;
-    min-height: 17rem
+    min-height: 0rem
 }
 
 @media (max-width:63.9375em) {

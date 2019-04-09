@@ -20,6 +20,7 @@ declare var document: any;
 export class GlobalService {
 
   auth = false;
+  loading:boolean = true;
   constructor() {
     if (localStorage.getItem("auth") == "yes")
       this.auth = true
@@ -30,6 +31,13 @@ export class GlobalService {
         src: script.src
       };
     });
+  }
+  //loading helper
+  setLoding() {
+    this.loading = true;
+  }
+  finishLoading() {
+    this.loading = false;
   }
   // auth control
   login() {

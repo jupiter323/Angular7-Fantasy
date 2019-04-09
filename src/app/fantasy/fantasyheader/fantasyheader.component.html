@@ -9,8 +9,7 @@
         <!-- <div class="ism-player-comp ism-player-comp--header ism-player-comp--1"> -->
         <div class="ism-game-header">
           <h1>
-            <a href="https://fantasy.premierleague.com/a/">
-
+            <a href="/fantasy">
               <picture>
                 <source media="(min-width: 1024px)" type="image/svg+xml"
                   srcset="assets/fantasy/static/libsass/plfpl/dist/img/svg/logos/fpl-logo-full.svg">
@@ -69,8 +68,6 @@
                 <span class="icn external-d ism-nav__tab__icon"></span>
               </a>
             </li>
-
-
           </ul>
           <ul *ngIf="gs.auth" class="ism-nav__list ismjs-main-nav">
 
@@ -119,9 +116,14 @@
               <a routerLink="prizes" [ngClass]="tabIndex==8?'ism-nav__tab is-active':'ism-nav__tab'"
                 data-nav-tab="prizes" data-nav-applink="true" (click)="tabIndex=8">Prizes</a>
             </li>
+            <li class="ism-nav__list__item">
+              <a href="/fantasy/fantasyhome" [ngClass]="tabIndex==9?'ism-nav__tab is-active':'ism-nav__tab'"
+                (click)="tabIndex=9;gs.logout()">Sign
+                Out</a>
+            </li>
 
           </ul>
-          <span *ngIf="gs.auth" class="ism-nav__dropdown-wrapper priority-nav__wrapper" aria-haspopup="true">
+          <!-- <span *ngIf="gs.auth" class="ism-nav__dropdown-wrapper priority-nav__wrapper" aria-haspopup="true">
             <button aria-controls="menu" type="button"
               class="ism-nav__dropdown-toggle priority-nav__dropdown-toggle priority-nav-is-visible is-open"
               prioritynav-count="11">More</button>
@@ -165,7 +167,7 @@
                 <a href="/fantasy/fantasyhome" class="ism-nav__tab" (click)="gs.logout()">Sign Out</a>
               </li>
             </ul>
-          </span>
+          </span> -->
 
         </nav>
       </div>

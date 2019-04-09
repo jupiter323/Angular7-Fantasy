@@ -20541,8 +20541,8 @@ body.webViewBody {
 
 @font-face {
     font-family: "slick";
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/slick.eot?0dc85e35bde6');
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/slick.eot?&0dc85e35bde6#iefix') format("embedded-opentype"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/slick.woff?0dc85e35bde6') format("woff"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/slick.ttf?0dc85e35bde6') format("truetype"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/slick.svg?0dc85e35bde6#slick') format("svg");
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/slick.eot?0dc85e35bde6');
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/slick.eot?&0dc85e35bde6#iefix') format("embedded-opentype"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/slick.woff?0dc85e35bde6') format("woff"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/slick.ttf?0dc85e35bde6') format("truetype"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/slick.svg?0dc85e35bde6#slick') format("svg");
     font-weight: normal;
     font-style: normal
 }
@@ -21185,32 +21185,32 @@ use {
 
 @font-face {
     font-family: "PremierSans-Light";
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.eot?&0dc85e35bde6#iefix');
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.eot?&0dc85e35bde6#iefix') format("eot"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.woff2?0dc85e35bde6') format("woff2"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.woff?0dc85e35bde6') format("woff"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.ttf?0dc85e35bde6') format("truetype"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.svg?0dc85e35bde6#51b3f097-4f77-44d6-84fa-d4ccabf83ea2') format("svg")
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Light.eot?&0dc85e35bde6#iefix');
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Light.eot?&0dc85e35bde6#iefix') format("eot"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Light.woff2?0dc85e35bde6') format("woff2"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Light.woff?0dc85e35bde6') format("woff"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Light.ttf?0dc85e35bde6') format("truetype"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Light.svg?0dc85e35bde6#51b3f097-4f77-44d6-84fa-d4ccabf83ea2') format("svg")
 }
 
 @font-face {
     font-family: "PremierSans-Regular";
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.eot?&0dc85e35bde6#iefix');
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.eot?&0dc85e35bde6#iefix') format("eot"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.woff2?0dc85e35bde6') format("woff2"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.woff?0dc85e35bde6') format("woff"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.ttf?0dc85e35bde6') format("truetype"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.svg?0dc85e35bde6#7750d31b-4f46-466c-a7f2-d0071c638678') format("svg")
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Regular.eot?&0dc85e35bde6#iefix');
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Regular.eot?&0dc85e35bde6#iefix') format("eot"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Regular.woff2?0dc85e35bde6') format("woff2"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Regular.woff?0dc85e35bde6') format("woff"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Regular.ttf?0dc85e35bde6') format("truetype"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Regular.svg?0dc85e35bde6#7750d31b-4f46-466c-a7f2-d0071c638678') format("svg")
 }
 
 @font-face {
     font-family: "PremierSans-Bold";
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix');
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix') format("eot"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.woff2?0dc85e35bde6') format("woff2"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.woff?0dc85e35bde6') format("woff"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.ttf?0dc85e35bde6') format("truetype"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.svg?0dc85e35bde6#6fd2576b-b17d-42bb-8069-d902dd3f6a6e') format("svg")
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix');
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix') format("eot"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.woff2?0dc85e35bde6') format("woff2"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.woff?0dc85e35bde6') format("woff"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.ttf?0dc85e35bde6') format("truetype"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.svg?0dc85e35bde6#6fd2576b-b17d-42bb-8069-d902dd3f6a6e') format("svg")
 }
 
 @font-face {
     font-family: "PremierSans-Bold";
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix');
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix') format("eot"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.woff2?0dc85e35bde6') format("woff2"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.woff?0dc85e35bde6') format("woff"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.ttf?0dc85e35bde6') format("truetype"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.svg?0dc85e35bde6#6fd2576b-b17d-42bb-8069-d902dd3f6a6e') format("svg")
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix');
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.eot?&0dc85e35bde6#iefix') format("eot"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.woff2?0dc85e35bde6') format("woff2"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.woff?0dc85e35bde6') format("woff"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.ttf?0dc85e35bde6') format("truetype"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-Bold.svg?0dc85e35bde6#6fd2576b-b17d-42bb-8069-d902dd3f6a6e') format("svg")
 }
 
 @font-face {
     font-family: "PremierSans-Light-Italic";
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.eot?&0dc85e35bde6#iefix');
-    src: url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.eot?&0dc85e35bde6#iefix') format("eot"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.woff2?0dc85e35bde6') format("woff2"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.woff?0dc85e35bde6') format("woff"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.ttf?0dc85e35bde6') format("truetype"), url('/assets/fantasy/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.svg?0dc85e35bde6#6fd2576b-b17d-42bb-8069-d902dd3f6a6e') format("svg")
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-LightIt.eot?&0dc85e35bde6#iefix');
+    src: url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-LightIt.eot?&0dc85e35bde6#iefix') format("eot"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-LightIt.woff2?0dc85e35bde6') format("woff2"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-LightIt.woff?0dc85e35bde6') format("woff"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-LightIt.ttf?0dc85e35bde6') format("truetype"), url('https://users.premierleague.com/static/libsass/plusers/dist/fonts/PremierLeagueW01-LightIt.svg?0dc85e35bde6#6fd2576b-b17d-42bb-8069-d902dd3f6a6e') format("svg")
 }
 
 .ism {}
