@@ -8090,7 +8090,7 @@ th {
     background-position: -250px -375px; }
 
 .badge-50 {
-  background-image: url("https://users.premierleague.com/static/libsass/plusers/dist/img/sprites/badges-50-sprite.png");
+  /* background-image: url("https://users.premierleague.com/static/libsass/plusers/dist/img/sprites/badges-50-sprite.png"); */
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
@@ -8098,7 +8098,7 @@ th {
   background-position: 0px -700px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .badge-50 {
-      background-image: url("https://users.premierleague.com/static/libsass/plusers/dist/img/sprites/badges-50-sprite@x2.png");
+      /* background-image: url("https://users.premierleague.com/static/libsass/plusers/dist/img/sprites/badges-50-sprite@x2.png"); */
       background-size: 750px 750px; } }
   .badge-50.ACM {
     background-position: -50px 0px; }

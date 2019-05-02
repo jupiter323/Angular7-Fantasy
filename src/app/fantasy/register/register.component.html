@@ -1,4 +1,4 @@
-<main id="mainContent" tabindex="0" class="ism">
+<main *ngIf="pageindex==0" id="mainContent" tabindex="0" class="ism">
 
   <div class="ism-header ism-header__register">
     <div class="ism-container">
@@ -13,9 +13,6 @@
     <div class="wrapper">
       <div id="ismr-content">
         <div>
-
-
-
           <h1 class="ism-block-title ism-block-title__pink">
             Creating a new account
           </h1>
@@ -56,7 +53,7 @@
                   class="ismjs-validate-on-blur">
                 <span id="ismjs-first_name-pass" class="ism-input-response ism-input-response__pass ism-hidden"><img
                     src="assets/fantasy/fantasy_register_files/icon-tick.svg"></span>
-                <span id="ismjs-first_name-fail" class="ism-input-response ism-input-response__fail"><img
+                <span id="ismjs-first_name-fail" class="ism-input-response ism-input-response__fail ism-hidden"><img
                     src="assets/fantasy/fantasy_register_files/icon-cross.svg"></span>
               </div>
             </div>
@@ -958,8 +955,805 @@
             </div>
 
             <div class="ism-form__group ism-form__centred-text ism-form__separator">
-              <button type="submit" class="ismjs-submit btn-primary">Next <span
+              <button class="ismjs-submit btn-primary" type="" (click)="next()">Next <span
+                  class="icn arrow-right-w"></span>
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<main *ngIf="pageindex==1" id="mainContent" tabindex="1" class="ism">
+
+  <div class="ism-header ism-header__register">
+    <div class="ism-container">
+      <div class="wrapper col-12">
+        <h1 class="pageTitle">Your Account</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ism-container">
+    <div class="wrapper">
+      <div id="ismr-content">
+        <div>
+          <h1 class="ism-block-title ism-block-title__pink">
+            Creating a new account
+          </h1>
+
+          <div class="ism-register-steps">
+            <div>
+              <i class="ism-icon ism-icon__done ism-icon__one">
+                <img src="assets/fantasy/fantasy_register_files/icon-tick.svg">
+              </i>
+              <span>1. Personal details</span>
+            </div>
+            <div>
+              <i class="ism-icon  ism-icon__two">
+                <img src="assets/fantasy/fantasy_register_files/icon-star.svg">
+              </i>
+              <span>2. Your favourites</span>
+            </div>
+            <div>
+              <i class="ism-icon ism-icon__off ism-icon__three">
+                <img src="assets/fantasy/fantasy_register_files/icon-email.svg">
+              </i>
+              <span>3. Email preferences</span>
+            </div>
+          </div>
+
+          <form class="ism-form__separator">
+
+            <div class="ism-form__group ism-form__centred">
+
+              <fieldset>
+
+                <legend class="ism-legend-as-title">
+                  Your Favourite Club
+                  <br><span>* Required</span>
+                  <span id="ismjs-favourite-pass" class="ism-input-response ism-input-response__pass ism-hidden"><img
+                      src="assets/fantasy/fantasy_register_files/icon-tick.svg"></span>
+                  <span id="ismjs-favourite-fail" class="ism-input-response ism-input-response__fail ism-hidden"><img
+                      src="assets/fantasy/fantasy_register_files/icon-cross.svg"></span>
+                </legend>
+                <p class="ism-form-subtitle">We will prepare web and mobile content according to your preferences</p>
+                <ul class="ism-club-badge-radio__list">
+
+                  <li>
+                    <input type="radio" value="91" name="favourite" id="ismjs-profile-favourite-91"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-91" class="ism-club-badge-radio__container">
+                      <span class="badge-50 BOU"></span>
+                      <span class="ism-club-badge-radio__name">AFC Bournemouth</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="3" name="favourite" id="ismjs-profile-favourite-3"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-3" class="ism-club-badge-radio__container">
+                      <span class="badge-50 ARS"></span>
+                      <span class="ism-club-badge-radio__name">Arsenal</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="36" name="favourite" id="ismjs-profile-favourite-36"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-36" class="ism-club-badge-radio__container">
+                      <span class="badge-50 BHA"></span>
+                      <span class="ism-club-badge-radio__name">Brighton</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="90" name="favourite" id="ismjs-profile-favourite-90"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-90" class="ism-club-badge-radio__container">
+                      <span class="badge-50 BUR"></span>
+                      <span class="ism-club-badge-radio__name">Burnley</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="97" name="favourite" id="ismjs-profile-favourite-97"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-97" class="ism-club-badge-radio__container">
+                      <span class="badge-50 CAR"></span>
+                      <span class="ism-club-badge-radio__name">Cardiff</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="8" name="favourite" id="ismjs-profile-favourite-8"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-8" class="ism-club-badge-radio__container">
+                      <span class="badge-50 CHE"></span>
+                      <span class="ism-club-badge-radio__name">Chelsea</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="31" name="favourite" id="ismjs-profile-favourite-31"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-31" class="ism-club-badge-radio__container">
+                      <span class="badge-50 CRY"></span>
+                      <span class="ism-club-badge-radio__name">Crystal Palace</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="11" name="favourite" id="ismjs-profile-favourite-11"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-11" class="ism-club-badge-radio__container">
+                      <span class="badge-50 EVE"></span>
+                      <span class="ism-club-badge-radio__name">Everton</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="54" name="favourite" id="ismjs-profile-favourite-54"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-54" class="ism-club-badge-radio__container">
+                      <span class="badge-50 FUL"></span>
+                      <span class="ism-club-badge-radio__name">Fulham</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="38" name="favourite" id="ismjs-profile-favourite-38"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-38" class="ism-club-badge-radio__container">
+                      <span class="badge-50 HUD"></span>
+                      <span class="ism-club-badge-radio__name">Huddersfield</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="13" name="favourite" id="ismjs-profile-favourite-13"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-13" class="ism-club-badge-radio__container">
+                      <span class="badge-50 LEI"></span>
+                      <span class="ism-club-badge-radio__name">Leicester</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="14" name="favourite" id="ismjs-profile-favourite-14"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-14" class="ism-club-badge-radio__container">
+                      <span class="badge-50 LIV"></span>
+                      <span class="ism-club-badge-radio__name">Liverpool</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="43" name="favourite" id="ismjs-profile-favourite-43"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-43" class="ism-club-badge-radio__container">
+                      <span class="badge-50 MCI"></span>
+                      <span class="ism-club-badge-radio__name">Man City</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="1" name="favourite" id="ismjs-profile-favourite-1"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-1" class="ism-club-badge-radio__container">
+                      <span class="badge-50 MUN"></span>
+                      <span class="ism-club-badge-radio__name">Man Utd</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="4" name="favourite" id="ismjs-profile-favourite-4"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-4" class="ism-club-badge-radio__container">
+                      <span class="badge-50 NEW"></span>
+                      <span class="ism-club-badge-radio__name">Newcastle</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="20" name="favourite" id="ismjs-profile-favourite-20"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-20" class="ism-club-badge-radio__container">
+                      <span class="badge-50 SOU"></span>
+                      <span class="ism-club-badge-radio__name">Southampton</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="6" name="favourite" id="ismjs-profile-favourite-6"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-6" class="ism-club-badge-radio__container">
+                      <span class="badge-50 TOT"></span>
+                      <span class="ism-club-badge-radio__name">Spurs</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="57" name="favourite" id="ismjs-profile-favourite-57"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-57" class="ism-club-badge-radio__container">
+                      <span class="badge-50 WAT"></span>
+                      <span class="ism-club-badge-radio__name">Watford</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="21" name="favourite" id="ismjs-profile-favourite-21"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-21" class="ism-club-badge-radio__container">
+                      <span class="badge-50 WHU"></span>
+                      <span class="ism-club-badge-radio__name">West Ham</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="39" name="favourite" id="ismjs-profile-favourite-39"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-39" class="ism-club-badge-radio__container">
+                      <span class="badge-50 WOL"></span>
+                      <span class="ism-club-badge-radio__name">Wolves</span>
+                    </label>
+                  </li>
+
+                  <li>
+                    <input type="radio" value="0" name="favourite" id="ismjs-profile-favourite-0"
+                      class="ismjs-validate-on-blur ism-club-badge-radio">
+                    <label for="ismjs-profile-favourite-0" class="ism-club-badge-radio__container">
+                      <span class="icn pl-logo"></span>
+                      <span class="ism-club-badge-radio__name">General PL Fan</span>
+                    </label>
+                  </li>
+
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="ism-form__group ism-form__centred-text ism-form__separator">
+
+              <fieldset>
+
+                <legend class="ism-legend-as-title">Do you want to keep an eye on other clubs?</legend>
+
+                <div class="ism-form__group">
+                  <a id="ismjs-activate-follow" class="btn-secondary">Select other clubs</a>
+                </div>
+
+                <ul id="ismjs-profile-followed" class="ism-checkbox-list">
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="91" name="followed" id="ismjs-profile-followed-91" disabled="">
+                      <label for="ismjs-profile-followed-91" class="ism-checkbox-radio-text">AFC Bournemouth</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="3" name="followed" id="ismjs-profile-followed-3">
+                      <label for="ismjs-profile-followed-3" class="ism-checkbox-radio-text">Arsenal</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="36" name="followed" id="ismjs-profile-followed-36">
+                      <label for="ismjs-profile-followed-36" class="ism-checkbox-radio-text">Brighton</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="90" name="followed" id="ismjs-profile-followed-90">
+                      <label for="ismjs-profile-followed-90" class="ism-checkbox-radio-text">Burnley</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="97" name="followed" id="ismjs-profile-followed-97">
+                      <label for="ismjs-profile-followed-97" class="ism-checkbox-radio-text">Cardiff</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="8" name="followed" id="ismjs-profile-followed-8">
+                      <label for="ismjs-profile-followed-8" class="ism-checkbox-radio-text">Chelsea</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="31" name="followed" id="ismjs-profile-followed-31">
+                      <label for="ismjs-profile-followed-31" class="ism-checkbox-radio-text">Crystal Palace</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="11" name="followed" id="ismjs-profile-followed-11">
+                      <label for="ismjs-profile-followed-11" class="ism-checkbox-radio-text">Everton</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="54" name="followed" id="ismjs-profile-followed-54">
+                      <label for="ismjs-profile-followed-54" class="ism-checkbox-radio-text">Fulham</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="38" name="followed" id="ismjs-profile-followed-38">
+                      <label for="ismjs-profile-followed-38" class="ism-checkbox-radio-text">Huddersfield</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="13" name="followed" id="ismjs-profile-followed-13">
+                      <label for="ismjs-profile-followed-13" class="ism-checkbox-radio-text">Leicester</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="14" name="followed" id="ismjs-profile-followed-14">
+                      <label for="ismjs-profile-followed-14" class="ism-checkbox-radio-text">Liverpool</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="43" name="followed" id="ismjs-profile-followed-43">
+                      <label for="ismjs-profile-followed-43" class="ism-checkbox-radio-text">Man City</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="1" name="followed" id="ismjs-profile-followed-1">
+                      <label for="ismjs-profile-followed-1" class="ism-checkbox-radio-text">Man Utd</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="4" name="followed" id="ismjs-profile-followed-4">
+                      <label for="ismjs-profile-followed-4" class="ism-checkbox-radio-text">Newcastle</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="20" name="followed" id="ismjs-profile-followed-20">
+                      <label for="ismjs-profile-followed-20" class="ism-checkbox-radio-text">Southampton</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="6" name="followed" id="ismjs-profile-followed-6">
+                      <label for="ismjs-profile-followed-6" class="ism-checkbox-radio-text">Spurs</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="57" name="followed" id="ismjs-profile-followed-57">
+                      <label for="ismjs-profile-followed-57" class="ism-checkbox-radio-text">Watford</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="21" name="followed" id="ismjs-profile-followed-21">
+                      <label for="ismjs-profile-followed-21" class="ism-checkbox-radio-text">West Ham</label>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="ism-radio-checkbox">
+                      <input type="checkbox" value="39" name="followed" id="ismjs-profile-followed-39">
+                      <label for="ismjs-profile-followed-39" class="ism-checkbox-radio-text">Wolves</label>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+            </div>
+
+            <div class="ism-form__group ism-form__centred-text ism-form__separator" style="padding-top: 2rem;">
+              <button type="" class="ismjs-submit btn-highlight" (click)="next()">Next <span
                   class="icn arrow-right-w"></span></button>
+            </div>
+
+            <div class="ism-form__group ism-form__centred-text">
+              <a (click)="back()" class="ismjs-link btn">Back to
+                personal details</a>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<main *ngIf="pageindex==2" id="mainContent" tabindex="2" class="ism">
+
+  <div class="ism-header ism-header__register">
+    <div class="ism-container">
+      <div class="wrapper col-12">
+        <h1 class="pageTitle">Your Account</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ism-container">
+    <div class="wrapper">
+      <div id="ismr-content">
+        <div>
+
+
+
+          <h1 class="ism-block-title ism-block-title__pink">
+            Creating a new account
+          </h1>
+
+          <div class="ism-register-steps">
+            <div>
+              <i class="ism-icon ism-icon__done ism-icon__one">
+                <img src="assets/fantasy/fantasy_register_files/icon-tick.svg">
+              </i>
+              <span>1. Personal details</span>
+            </div>
+            <div>
+              <i class="ism-icon ism-icon__done ism-icon__two">
+                <img src="assets/fantasy/fantasy_register_files/icon-tick.svg">
+              </i>
+              <span>2. Your favourites</span>
+            </div>
+            <div>
+              <i class="ism-icon  ism-icon__three">
+                <img src="assets/fantasy/fantasy_register_files/icon-email.svg">
+              </i>
+              <span>3. Email preferences</span>
+            </div>
+          </div>
+
+
+
+          <form class="ism-form__separator">
+
+            <div class="ism-form__group ism-form__centred">
+              <h2 class="ism-legend-as-title">Club Email Communications</h2>
+              <p class="ism-form-subtitle">Let us know if you would like to hear about the club(s) you support</p>
+            </div>
+
+            <div class="ism-form__group ism-form__centred">
+
+              <table class="ism-email-matrix">
+                <thead>
+                  <tr>
+                    <th>
+                      <span>Favourite Club</span><br>
+                      <a routerLink="register"
+                        class="ismjs-link">Change</a>
+                    </th>
+                    <th>
+                      Communications<br>direct from club
+                      <!-- <i class="ism-info" title="Allow the club to send me official emails">i</i> -->
+                    </th>
+                    <th>
+                      Communications<br>from Premier League
+                      <!-- <i class="ism-info" title="Allow PL to send me club related emails">i</i> -->
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-ism_name="Favourite Club">
+                      <span class="badge-50 BOU"></span>
+                      <span class="ism-team-name">AFC Bournemouth<br>
+                        <a routerLink="register"
+                          class="ismjs-link ism-change-club">Change</a>
+                      </span>
+                    </td>
+                    <td data-ism_name="Communications direct from club">
+                      <!-- <i class="ism-info" title="Allow the club to send me official emails">i</i> -->
+                      <div class="ism-radio-checkbox">
+                        <input type="checkbox" class="ismjs-official-comms" name="club_communications"
+                          value="club_communications_91" id="club_communications_91">
+                        <label for="club_communications_91">Communications direct from club for AFC Bournemouth</label>
+                      </div>
+                    </td>
+                    <td data-ism_name="Communications from Premier League">
+                      <!-- <i class="ism-info" title="Allow PL to send me club related emails">i</i> -->
+                      <div class="ism-radio-checkbox">
+
+                        <input type="checkbox" id="ismjs-profile-comms-32" name="pl_communications" value="32">
+                        <label for="ismjs-profile-comms-32">
+                          Communications from Premier League
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+              <div class="ism-no-club notificationBar secondaryNotification">
+                No Followed Clubs. <a routerLink="register"
+                  class="ismjs-link">Add Club</a>
+              </div>
+
+            </div>
+
+            <div class="ism-form__group ism-form__centred ism-form__separator">
+              <h2 class="ism-legend-as-title">Premier League Email Communications</h2>
+              <p class="ism-form-subtitle">Let us know if you would like the Premier League to send you information
+                about any of the following topics</p>
+
+              <ul class="ism-checkbox-list">
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-1" name="pl_communications" value="1">
+                    <label for="ismjs-profile-comms-1">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to receive general information from the Premier League">i</i> -->
+
+                      General communication</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-11" name="pl_communications" value="11">
+                    <label for="ismjs-profile-comms-11">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear news about Fantasy Premier League">i</i> -->
+
+                      Fantasy Premier League</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-36" name="pl_communications" value="36">
+                    <label for="ismjs-profile-comms-36">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear about FPL Draft">i</i> -->
+
+                      FPL Draft</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-34" name="pl_communications" value="34">
+                    <label for="ismjs-profile-comms-34">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear about broadcast schedules">i</i> -->
+
+                      Broadcast schedules</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-35" name="pl_communications" value="35">
+                    <label for="ismjs-profile-comms-35">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to receive fixture change info">i</i> -->
+
+                      Fixture change info</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-2" name="pl_communications" value="2">
+                    <label for="ismjs-profile-comms-2">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear about Creating Chances initiatives">i</i> -->
+
+                      Communities</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-3" name="pl_communications" value="3">
+                    <label for="ismjs-profile-comms-3">
+
+                      <!-- <i class="ism-info" title="I wish to join the PL Fan Panel">i</i> -->
+
+                      Fan Panel</label>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="ism-form__group ism-form__centred ism-form__separator">
+              <h2 class="ism-legend-as-title">Partner Email Communications</h2>
+              <p class="ism-form-subtitle">Let us know if you would like the Premier League to send you information on
+                behalf of the following official partners</p>
+
+              <ul class="ism-checkbox-list">
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-4" name="pl_communications" value="4">
+                    <label for="ismjs-profile-comms-4">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from Barclays">i</i> -->
+
+                      Barclays</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-10" name="pl_communications" value="10">
+                    <label for="ismjs-profile-comms-10">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from Broadcasters">i</i> -->
+
+                      Broadcasters</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-13" name="pl_communications" value="13">
+                    <label for="ismjs-profile-comms-13">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from Cadbury">i</i> -->
+
+                      Cadbury</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-37" name="pl_communications" value="37">
+                    <label for="ismjs-profile-comms-37">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from Coca-Cola">i</i> -->
+
+                      Coca-Cola</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-6" name="pl_communications" value="6">
+                    <label for="ismjs-profile-comms-6">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from EA SPORTS">i</i> -->
+
+                      EA SPORTS</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-7" name="pl_communications" value="7">
+                    <label for="ismjs-profile-comms-7">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from Nike">i</i> -->
+
+                      Nike</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-8" name="pl_communications" value="8">
+                    <label for="ismjs-profile-comms-8">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from TAG Heuer">i</i> -->
+
+                      TAG Heuer</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-9" name="pl_communications" value="9">
+                    <label for="ismjs-profile-comms-9">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from Topps">i</i> -->
+
+                      Topps</label>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ism-radio-checkbox">
+                    <input type="checkbox" id="ismjs-profile-comms-12" name="pl_communications" value="12">
+                    <label for="ismjs-profile-comms-12">
+
+                      <!-- <i class="ism-info" title="I&#x27;d like to hear from Visit Britain">i</i> -->
+
+                      Visit Britain</label>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="ism-form__group ism-form__centred ism-form__policy ism-form__separator">
+              <p>
+                Our <a routerLink="register" target="_blank">Privacy Policy</a> sets out
+                why the Premier League collects data from you and how it will be processed. You can manage your email
+                preferences and change the information we send to you at any time by accessing your account and clicking
+                'Update Profile'.
+              </p>
+              <p>
+                If you no longer wish to receive communications directly from the club(s) you support, you should
+                contact the club(s) directly to inform them. More information on how to do this can be found on our <a
+                  routerLink="register" target="_blank">Withdrawing
+                  consent from Clubs</a> page.
+              </p>
+            </div>
+
+            <div class="ism-form__group ism-form__centred ism-form__separator ism-checkbox-radio-single-centred ">
+              <span id="ismjs-terms_agreed-pass"
+                class="ism-input-response ism-input-response__pass ism-t-and-c ism-hidden"><img
+                  src="assets/fantasy/fantasy_register_files/icon-tick.svg"></span>
+              <span id="ismjs-terms_agreed-fail"
+                class="ism-input-response ism-input-response__fail ism-t-and-c ism-hidden"><img
+                  src="assets/fantasy/fantasy_register_files/icon-cross.svg"></span>
+              <div class="ism-radio-checkbox">
+                <input type="checkbox" value="1" name="terms_agreed" id="ismjs-terms-agreed"
+                  class="ismjs-validate-on-blur">
+                <label for="ismjs-terms-agreed" class="ism-checkbox-radio-single-centred">
+                  I have read and agree to the <a routerLink="register"
+                    class="ism-link" target="_blank">Terms &amp; Conditions</a>
+                </label>
+              </div>
+            </div>
+
+            <div class="ism-form__group ism-form__centred ism-hidden" id="ismjs-email-duplicate">
+              <p><span>admin@test.no </span>already has a premierleague account. Please choose a different email address
+                or <a routerLink="register">login to your existing account</a>.</p>
+              <label for="ismjs-profile-email">Email Address</label>
+              <input type="email" id="ismjs-profile-email" name="email" class="ismjs-validate-on-blur"
+                aria-describedby="ismjs-email-duplicate-error">
+              <span id="ismjs-email-pass" class="ism-input-response ism-input-response__pass ism-hidden"><img
+                  src="assets/fantasy/fantasy_register_files/icon-tick.svg"></span>
+              <span id="ismjs-email-fail" class="ism-input-response ism-input-response__fail ism-hidden"><img
+                  src="assets/fantasy/fantasy_register_files/icon-cross.svg"></span>
+            </div>
+
+            <div class="ism-form__group ism-form__centred-text">
+              <a (click)="gs.login()" href="/fantasy/status" class="ismjs-submit btn-primary">
+               Complete registration
+              </a>
+            </div>
+            <div class="ism-form__group ism-form__centred-text">
+              <a (click)="back()" class="ismjs-link btn">Back to
+                choose your favourites</a>
             </div>
           </form>
 

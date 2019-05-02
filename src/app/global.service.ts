@@ -21,6 +21,7 @@ export class GlobalService {
 
   auth = false;
   loading:boolean = true;
+  registering:boolean = false;
   constructor() {
     if (localStorage.getItem("auth") == "yes")
       this.auth = true

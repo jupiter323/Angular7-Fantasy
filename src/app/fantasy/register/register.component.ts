@@ -7,10 +7,12 @@ import { GlobalService } from 'src/app/global.service';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-
+  pageindex = 0
   constructor(
-    private gs:GlobalService
-  ) { }
+    private gs: GlobalService
+  ) {
+    gs.registering = true;
+   }
 
   ngOnInit() {
     this.loadScripts();
@@ -21,5 +23,14 @@ export class RegisterComponent implements OnInit {
       // Script Loaded Successfully
       console.log(data);
     }).catch(error => console.log(error));
+  }
+  next() {
+    if (this.pageindex++ > 3) this.pageindex = 3;
+  }
+  back() {
+    if (this.pageindex-- < 0) this.pageindex = 0;
+  }
+  ngOnDestroy() {
+    this.gs.registering = false;
   }
 }

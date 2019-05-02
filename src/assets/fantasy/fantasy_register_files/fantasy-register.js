@@ -13353,8 +13353,8 @@ return jQuery;
 
   // Next for Node.js or CommonJS. jQuery may not be needed as a module.
   } else if (typeof exports !== 'undefined') {
-    var _ = require('underscore'), $;
-    try { $ = require('jquery'); } catch (e) {}
+    var _ = require('./node_modules/underscore'), $;
+    try { $ = require('./node_modules/jquery'); } catch (e) {}
     factory(root, exports, _, $);
 
   // Finally, as a browser global.
@@ -15277,8 +15277,8 @@ return jQuery;
       return (root.Marionette = root.Mn = factory(root, Backbone, _));
     });
   } else if (typeof exports !== 'undefined') {
-    var Backbone = require('backbone');
-    var _ = require('underscore');
+    var Backbone = require('./node_modules/backbone');
+    var _ = require('./node_modules/underscore');
     module.exports = factory(root, Backbone, _);
   } else {
     root.Marionette = root.Mn = factory(root, root.Backbone, root._);
@@ -19224,7 +19224,7 @@ return jQuery;
 
   // Next for Node.js or CommonJS.
   else if (typeof exports === 'object')
-    factory(require('underscore'), require('backbone'), exports);
+    factory(require('./node_modules/underscore'), require('./node_modules/backbone'), exports);
 
   // Finally, as a browser global.
   else

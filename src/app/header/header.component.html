@@ -116,8 +116,10 @@
               alt="Premier League Logo"></span>
         </a>
         <nav class="mainNav">
-          <ul class="pageLinks" role="menu">
-            <!-- <li class=" premierleague " tabindex="0" aria-haspopup="true" role="menuitem">
+          <!-- <ul  class="pageLinks" role="menu"> -->
+
+          <!-- premiser dropdown start -->
+          <!-- <li class=" premierleague " tabindex="0" aria-haspopup="true" role="menuitem">
               <div role="button" class="navLink active " tabindex="index"> Premier League
                 <span class="icn chevron-down-sm-w"></span>
               </div>
@@ -157,7 +159,10 @@
                 </ul>
               </div>
             </li> -->
-            <li class=" fantasy " role="menuitem">
+          <!-- premier dropdown end -->
+
+          <!-- fantasy dropdown start -->
+          <!-- <li class=" fantasy " role="menuitem">
               <div role="button" class="navLink " tabindex="index"> Fantasy <span class="icn chevron-down-sm-w"></span>
               </div>
               <div class="dropdown " aria-hidden="true">
@@ -168,8 +173,11 @@
                       Draft </a></li>
                 </ul>
               </div>
-            </li>
-            <!-- <li class=" stats " role="menuitem"><a href="stats.html" data-link-index="2" class="navLink "
+            </li> -->
+          <!-- fantasy dropdown end -->
+
+          <!-- stats start -->
+          <!-- <li class=" stats " role="menuitem"><a href="stats.html" data-link-index="2" class="navLink "
                 role="menuitem"> Stats </a>
               <div role="button" class="navLink mobile " tabindex="index"> Stats <span
                   class="icn chevron-down-sm-w"></span></div>
@@ -193,8 +201,11 @@
                       Awards </a></li>
                 </ul>
               </div>
-            </li>
-            <li class=" video " role="menuitem"><a href="video.html" data-link-index="3" class="navLink "
+            </li> -->
+          <!-- stats end -->
+
+          <!-- video single start -->
+          <!-- <li class=" video " role="menuitem"><a href="video.html" data-link-index="3" class="navLink "
                 role="menuitem"> Video </a>
               <div role="button" class="navLink mobile " tabindex="index"> Video <span
                   class="icn chevron-down-sm-w"></span></div>
@@ -204,8 +215,11 @@
                     </a></li>
                 </ul>
               </div>
-            </li>
-            <li class=" communities " tabindex="0" role="menuitem">
+            </li> -->
+          <!-- video single end -->
+
+          <!-- community dropdown start -->
+          <!-- <li class=" communities " tabindex="0" role="menuitem">
               <div role="button" class="navLink " tabindex="index"> Communities <span
                   class="icn chevron-down-sm-w"></span></div>
               <div class="dropdown " aria-hidden="true">
@@ -221,45 +235,288 @@
                     </a></li>
                 </ul>
               </div>
-            </li>  
-            <li class="more " tabindex="0" aria-haspopup="true" role="menuitem">
-              <div role="button" class="navLink ">More<span class="icn chevron-down-sm-w"></span>
-              </div>
-              <div class="dropdown" aria-hidden="true">
+            </li> -->
+          <!-- community dropdown end -->
+
+          <!-- fantasy start -->
+
+          <ul *ngIf="!gs.auth" class="pageLinks" role="menu">
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/fantasyhome" data-link-index="0"
+                class="navLink " role="menuitem"> Home </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Home <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
                 <ul role="menu">
-                  <li><a href="epl.html" role="menuitem">ePremier League</a></li>
-                  <li><a href="transfers.html" role="menuitem">Transfers</a></li>
-                  <li><a href="usa-bar-finder.html" role="menuitem">USA Bar Finder</a></li>
-                  <li><a href="poppy.html" role="menuitem">Poppy</a></li>
-                  <li><a href="football-remembers.html" role="menuitem">Football Remembers</a>
-                  </li>
-                  <li><a href="this-is-pl/index.html" role="menuitem">This is PL</a></li>
-                  <li><a href="photos.html" role="menuitem">Photos</a></li>
-                  <li><a href="nike-ball-hub.html" role="menuitem">Nike Ball Hub</a></li>
-                  <li><a href="about.html" role="menuitem">About</a></li>
-                  <li><a href="partners.html" role="menuitem">Partners</a></li>
-                  <li><a href="pl-live.html" role="menuitem">PL Live</a></li>
-                  <li><a href="RainbowLaces.html" role="menuitem">Rainbow Laces</a></li>
-                  <li><a href="publications.html" role="menuitem">Publications</a></li>
-                  <li><a href="legal.html" role="menuitem">Legal</a></li>
-                  <li><a href="contact/getintouch.html" role="menuitem">Contact Us</a></li>
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/fantasyhome" role="menuitem"> Dashboard
+                    </a></li>
                 </ul>
               </div>
             </li>
-           
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/prizes" data-link-index="1" class="navLink "
+                role="menuitem"> Prizes </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Prizes <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/prizes" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/scout" data-link-index="2" class="navLink "
+                role="menuitem"> The Scout </a>
+              <div role="button" class="navLink mobile " tabindex="index"> The Scout <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/scout" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/help" data-link-index="3" class="navLink "
+                role="menuitem"> Help </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Help <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/help" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/statistics" data-link-index="4" class="navLink "
+                role="menuitem"> Statistics </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Statistics <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/statistics" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a routerLink="/draft" data-link-index="5" class="navLink "
+                role="menuitem"> Draft </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Draft <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/draft" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem">
+              <a href="http://www.rotoworld.com/sports/bpl/premier-league?utm_source=premier-league-fantasy&amp;utm_campaign=rotoworld&amp;utm_medium=link"
+                data-link-index="6" class="navLink" role="menuitem" target="_blank" rel="noopener noreferrer"> Rotoworld
+              </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Rotoworld
+                <span class="icn external-w ism-nav__tab__icon"></span>
+                <span class="icn external-d ism-nav__tab__icon"></span>
+              </div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0"
+                      href="http://www.rotoworld.com/sports/bpl/premier-league?utm_source=premier-league-fantasy&amp;utm_campaign=rotoworld&amp;utm_medium=link"
+                      role="menuitem" target="_blank" rel="noopener noreferrer"> Dashboard
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
             <li class="clubs" aria-haspopup="true">
               <div role="button" class="navLink clubListMobileButton">Clubs<span class="icn external-w"><span
                     class="visuallyHidden">External Link</span></span>
               </div>
               <div class="dropdown" aria-hidden="true" role="menu"></div>
-            </li>    -->
+            </li>
           </ul>
-      
+
+          <ul *ngIf="gs.auth" class="pageLinks" role="menu">
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/status" data-link-index="0" class="navLink "
+                role="menuitem"> Status </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Status <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/status" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/myteam" data-link-index="1" class="navLink "
+                role="menuitem"> My team </a>
+              <div role="button" class="navLink mobile " tabindex="index"> My team <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/myteam" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/points" data-link-index="2" class="navLink "
+                role="menuitem"> Points </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Points <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/points" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/transfers" data-link-index="3" class="navLink "
+                role="menuitem"> Transfers </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Transfers <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/transfers" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/leagues" data-link-index="4" class="navLink "
+                role="menuitem"> Leagues </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Leagues <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/leagues" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/fixtures" data-link-index="5" class="navLink "
+                role="menuitem"> Fixtures </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Fixtures <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/fixtures" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem">
+              <a href="http://www.rotoworld.com/sports/bpl/premier-league?utm_source=premier-league-fantasy&amp;utm_campaign=rotoworld&amp;utm_medium=link"
+                data-link-index="6" class="navLink" role="menuitem" target="_blank" rel="noopener noreferrer"> Rotoworld
+              </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Rotoworld
+                <span class="icn external-w ism-nav__tab__icon"></span>
+                <span class="icn external-d ism-nav__tab__icon"></span>
+              </div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0"
+                      href="http://www.rotoworld.com/sports/bpl/premier-league?utm_source=premier-league-fantasy&amp;utm_campaign=rotoworld&amp;utm_medium=link"
+                      role="menuitem" target="_blank" rel="noopener noreferrer"> Dashboard
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/statistics" data-link-index="7" class="navLink "
+                role="menuitem"> Statistics </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Statistics <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/statistics" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/scout" data-link-index="8" class="navLink "
+                role="menuitem"> The Scout </a>
+              <div role="button" class="navLink mobile " tabindex="index"> The Scout <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/scout" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>        
+
+            <li class=" video " role="menuitem"><a routerLink="/fantasy/prizes" data-link-index="10" class="navLink "
+                role="menuitem"> Prizes </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Prizes <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" routerLink="/fantasy/prizes" role="menuitem"> Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class=" video " role="menuitem"><a href="/fantasy/fantasyhome" data-link-index="11" class="navLink "
+                (click)="gs.logout()" role="menuitem"> Sign Out </a>
+              <div role="button" class="navLink mobile " tabindex="index"> Sign Out <span
+                  class="icn chevron-down-sm-w"></span></div>
+              <div class="dropdown dropdownMobile" aria-hidden="true">
+                <ul role="menu">
+                  <li tabindex="-1"><a tabindex="0" href="/fantasy/fantasyhome" role="menuitem" (click)="gs.logout()">
+                      Dashboard
+                    </a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="more " tabindex="0" aria-haspopup="true" role="menuitem">
+              <div role="button" class="navLink ">More<span class="icn chevron-down-sm-w"></span>
+              </div>
+              <div class="dropdown" aria-hidden="true">
+                <ul role="menu">
+                  <li> <a routerLink="/draft" class="ism-nav__tab ism-nav__tab--primary">Draft</a> </li>
+                  <li><a routerLink="fantasy/statistics" role="menuitem">Player Availability</a></li>
+                  <li><a routerLink="/fantasy/help" role="menuitem">Help</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="clubs" aria-haspopup="true">
+              <div role="button" class="navLink clubListMobileButton">Clubs<span class="icn external-w"><span
+                    class="visuallyHidden">External Link</span></span>
+              </div>
+              <div class="dropdown" aria-hidden="true" role="menu"></div>
+            </li>
+
+          </ul>
+          <!-- fantasy end -->
+
+
+
+
+          <!-- </ul> -->
+
         </nav>
+
+        <!-- sign in start -->
         <!-- <a href="#!" class="navLink navOption fantasySignIn" role="button" tabindex="0">
           <div class="icn user-w show-m"></div>
           <span class="fantasySignInLabel">Sign in</span>
-        </a> 
+        </a>
         <a href="#!" class="navLink navOption fantasySignOut" role="button" tabindex="0">
           <div class="icn user-w show-m"></div><span class="fantasyUsername"></span>
         </a>
@@ -268,8 +525,9 @@
               class="visuallyHidden">Search</span>
             <div alt="" class="icn search-w"></div>
           </div>
-        </div>
-      -->
+        </div> -->
+        <!-- sign in end -->
+
       </section>
       <div class="searchBar searchBarContainer" data-widget="search-header-redirect" role="search">
         <div class="searchBox">
@@ -285,8 +543,8 @@
       <div class="searchOverlay"></div>
     </div>
     <nav class="subNav" role="menubar">
-       <ul>
-      <!--  <li><a href="index.html" class=" active" data-link-index="0" role="menuitem">Home</a></li>
+      <ul>
+        <!--  <li><a href="index.html" class=" active" data-link-index="0" role="menuitem">Home</a></li>
         <li><a href="fixtures.html" class=" " data-link-index="1" role="menuitem">Fixtures</a></li>
         <li><a href="results.html" class=" " data-link-index="2" role="menuitem">Results</a></li>
         <li><a href="tables.html" class=" " data-link-index="3" role="menuitem">Tables</a></li>
@@ -305,6 +563,6 @@
         <li><a href="referees/overview.html" class=" " data-link-index="15" role="menuitem">Referees</a>
         </li>-->
       </ul>
-    </nav> 
+    </nav>
   </div>
 </header>
