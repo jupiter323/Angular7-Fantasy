@@ -6,9 +6,8 @@ interface Scripts {
   src: string;
 }
 export const ScriptStore: Scripts[] = [
-  { name: 'chartjs', src: 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js' },
-  { name: 'fantasy-register-pulse', src: '../assets/fantasy/fantasy_register_files/pulse.min.js' },
-  { name: 'fantasy-register-pulse', src: '../assets/fantasy/fantasy_register_files/pulse.min.js' }
+  { name: 'chartjs', src: '../assets/js/Chart.bundle.min.js' },
+  { name: 'fantasy-register-pulse', src: '../assets/js/pulse.min.js' }
 ];
 
 declare var document: any;
